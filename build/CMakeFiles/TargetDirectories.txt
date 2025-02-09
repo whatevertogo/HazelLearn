@@ -1,6 +1,0 @@
-C:/ClionProjects/HazelLearn/build/CMakeFiles/ALL_BUILD.dir
-C:/ClionProjects/HazelLearn/build/CMakeFiles/ZERO_CHECK.dir
-C:/ClionProjects/HazelLearn/build/Hazel/CMakeFiles/Hazel.dir
-C:/ClionProjects/HazelLearn/build/Hazel/CMakeFiles/ALL_BUILD.dir
-C:/ClionProjects/HazelLearn/build/Sandbox/CMakeFiles/Sandbox.dir
-C:/ClionProjects/HazelLearn/build/Sandbox/CMakeFiles/ALL_BUILD.dir
