@@ -1,0 +1,7 @@
+# CMakeLists.txt for Sandbox
+project(Sandbox)
+
+add_executable(Sandbox src/SandboxApp.cpp)
+
+target_link_libraries(Sandbox Hazel)
+
