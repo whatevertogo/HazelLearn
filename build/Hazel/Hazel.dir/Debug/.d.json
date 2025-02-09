@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\clionprojects\\hazellearn\\hazel\\src\\hazel\\application.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\clionprojects\\hazellearn\\hazel\\src\\hazel\\application.h",
+            "c:\\clionprojects\\hazellearn\\hazel\\src\\hazel\\core.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Sandbox.dir\\Debug\\SandboxApp.obj",
+            "outputs": [
+                "C:\\ClionProjects\\HazelLearn\\build\\Sandbox\\Sandbox.dir\\Debug\\vc143.pdb",
+                "Sandbox.dir\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}

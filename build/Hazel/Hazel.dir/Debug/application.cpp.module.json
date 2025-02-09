@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Hazel.dir\\Debug\\Application.obj",
+            "outputs": [
+                "C:\\ClionProjects\\HazelLearn\\build\\Hazel\\Hazel.dir\\Debug\\vc143.pdb",
+                "Hazel.dir\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}
