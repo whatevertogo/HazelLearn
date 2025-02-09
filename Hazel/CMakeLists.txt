@@ -5,10 +5,6 @@ if(MSVC)
     add_compile_options(/utf-8)
 endif()
 
-
-
-
-
 # Define source files for Hazel
 file(GLOB_RECURSE HAZEL_SOURCES
         "src/*.cpp"
