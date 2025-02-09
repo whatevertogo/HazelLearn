@@ -1,10 +1,11 @@
 #pragma once
 
-// 被应用程序使用的头文件
-#include "hazel/Application.h"
+// For use by Hazel applications
+#include "Hazel/Application.h"
 
 
+#include "Hazel/Log.h"
 
-// 进入点
-#include "hazel/EntryPoint.h"
+// ---Entry Point------------------------
+#include "Hazel/EntryPoint.h"
 // ------------------------------------

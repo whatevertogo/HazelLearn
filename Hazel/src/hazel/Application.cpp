@@ -11,7 +11,7 @@ namespace Hazel {
 
 	void Application::Run() {
 		while (true) {
-			cout<<"Running"<<endl;
+			cout<<"RunningInApplication"<<endl;
 		}
 	}
 }

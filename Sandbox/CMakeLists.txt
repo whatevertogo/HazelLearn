@@ -9,6 +9,11 @@ file(GLOB_RECURSE SANDBOX_SOURCES
 # Create executable
 add_executable(Sandbox ${SANDBOX_SOURCES})
 
+# Add necessary definitions
+target_compile_definitions(Sandbox PRIVATE
+        HZ_PLATFORM_WINDOWS
+)
+
 # Link against Hazel DLL
 target_link_libraries(Sandbox PRIVATE Hazel)
 

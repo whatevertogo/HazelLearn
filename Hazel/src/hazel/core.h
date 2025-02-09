@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #ifdef _WIN32
 	#ifdef HAZEL_BUILD_DLL

@@ -1,6 +1,12 @@
 cmake_minimum_required(VERSION 3.30)
 project(HazelLearn)
 
+# 添加 UTF-8 编码支持
+if(MSVC)
+    add_compile_options(/utf-8)
+endif()
+
+
 set(CMAKE_CXX_STANDARD 20)
 
 # Enable DLL build
