@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\ClionProjects\HazelLearn\build\CMakeFiles\65cc07976cc68ff05f223d76cf58aadb\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B8BC0DB9-C312-3897-AEA8-A1DDA24151EE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

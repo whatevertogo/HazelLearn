@@ -1,24 +1,17 @@
 #include "Application.h"
+#include <iostream>
+using namespace std;
+namespace Hazel {
 
-namespace Hazel
-{
-
-	Application::Application()
-	{
+	Application::Application() {
 	}
 
-
-	Application::~Application()
-	{
+	Application::~Application() {
 	}
 
-
-	void Application::Run()
-	{
-
-		while (true);
+	void Application::Run() {
+		while (true) {
+			cout<<"Running"<<endl;
+		}
 	}
-
-
 }
-

@@ -1,21 +1,16 @@
 #pragma once
-
-#include "core.h"
+#include "Core.h"
 
 namespace Hazel {
 
-	// 构造函数
-	Application::Application() {
-		Log::Init();
-	}
+	class HAZEL_API Application {
+	public:
+		Application();
+		virtual ~Application();
 
-	// 析构函数
-	Application::~Application() {
-	}
+		void Run();
+	};
 
-	// 运行函数
-	void Application::Run() {
-		while (true);
-	}
-
+	// To be defined by CLIENT
+	Application* CreateApplication();
 }
