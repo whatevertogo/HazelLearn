@@ -13,5 +13,5 @@ namespace Hazel {
 
 	// To be defined by CLIENT
 
-	Hazel::Application* Hazel::CreateApplication();
+	Hazel::Application* CreateApplication();
 }
