@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel\Application.cpp">
+    <ClCompile Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -9,13 +12,16 @@
     <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel\Application.h">
+    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\Application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel\EntryPoint.h">
+    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel\core.h">
+    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -24,10 +30,10 @@
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{01101C67-A691-31AB-8E4B-DD81E0858AC1}</UniqueIdentifier>
+      <UniqueIdentifier>{25196741-4ED0-3D62-8482-65884DF26103}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{944A7E40-B143-33F4-8FE0-D77757E05CE7}</UniqueIdentifier>
+      <UniqueIdentifier>{28064395-C48B-32B3-B611-3037520A9907}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

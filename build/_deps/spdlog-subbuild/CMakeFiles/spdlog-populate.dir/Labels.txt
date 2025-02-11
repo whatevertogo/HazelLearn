@@ -1,0 +1,14 @@
+# Target labels
+ spdlog-populate
+# Source files and their labels
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/cf707655bf10e01b5aef445d68fa389c/spdlog-populate.rule
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/dc9886093bf0fd4950a1fa37fc69134a/spdlog-populate-complete.rule
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/58063245509674aacd95d05dc461b0ce/spdlog-populate-build.rule
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/58063245509674aacd95d05dc461b0ce/spdlog-populate-configure.rule
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/58063245509674aacd95d05dc461b0ce/spdlog-populate-download.rule
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/58063245509674aacd95d05dc461b0ce/spdlog-populate-install.rule
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/58063245509674aacd95d05dc461b0ce/spdlog-populate-mkdir.rule
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/58063245509674aacd95d05dc461b0ce/spdlog-populate-patch.rule
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/58063245509674aacd95d05dc461b0ce/spdlog-populate-test.rule
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/58063245509674aacd95d05dc461b0ce/spdlog-populate-update.rule

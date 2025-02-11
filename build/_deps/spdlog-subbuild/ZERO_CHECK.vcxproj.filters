@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\VsCodeCode\VscodeView\HazelLearn\build\_deps\spdlog-subbuild\CMakeFiles\cf707655bf10e01b5aef445d68fa389c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4CB4075C-AAC0-383A-A1C8-3A3C7504FD7D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

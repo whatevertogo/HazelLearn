@@ -2,7 +2,8 @@ project(Hazel)
 
 # 添加 UTF-8 编码支持
 if(MSVC)
-    add_compile_options(/utf-8)
+    add_compile_options(/utf-8 /wd4819)
+    add_compile_definitions(_UNICODE UNICODE)
 endif()
 
 # Define source files for Hazel
@@ -13,6 +14,7 @@ file(GLOB_RECURSE HAZEL_SOURCES
 
 # Create shared library (DLL)
 add_library(Hazel SHARED ${HAZEL_SOURCES})
+
 
 # Define HAZEL_BUILD_DLL when building the DLL
 target_compile_definitions(Hazel PRIVATE

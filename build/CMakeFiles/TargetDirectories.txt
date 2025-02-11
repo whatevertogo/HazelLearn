@@ -1,6 +1,8 @@
-C:/ClionProjects/HazelLearn/build/CMakeFiles/ALL_BUILD.dir
-C:/ClionProjects/HazelLearn/build/CMakeFiles/ZERO_CHECK.dir
-C:/ClionProjects/HazelLearn/build/Hazel/CMakeFiles/Hazel.dir
-C:/ClionProjects/HazelLearn/build/Hazel/CMakeFiles/ALL_BUILD.dir
-C:/ClionProjects/HazelLearn/build/Sandbox/CMakeFiles/Sandbox.dir
-C:/ClionProjects/HazelLearn/build/Sandbox/CMakeFiles/ALL_BUILD.dir
+D:/VsCodeCode/VscodeView/HazelLearn/build/CMakeFiles/ALL_BUILD.dir
+D:/VsCodeCode/VscodeView/HazelLearn/build/CMakeFiles/ZERO_CHECK.dir
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-build/CMakeFiles/spdlog.dir
+D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-build/CMakeFiles/ALL_BUILD.dir
+D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/CMakeFiles/Hazel.dir
+D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/CMakeFiles/ALL_BUILD.dir
+D:/VsCodeCode/VscodeView/HazelLearn/build/Sandbox/CMakeFiles/Sandbox.dir
+D:/VsCodeCode/VscodeView/HazelLearn/build/Sandbox/CMakeFiles/ALL_BUILD.dir

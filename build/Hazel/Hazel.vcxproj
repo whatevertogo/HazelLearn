@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{058DE4DB-F2F9-37A1-9719-042727DCAE6C}</ProjectGuid>
+    <ProjectGuid>{6E6014D9-F4F3-3C13-BD76-F3D2778BCA0D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -34,25 +34,21 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <UseDebugLibraries>true</UseDebugLibraries>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <UseDebugLibraries>false</UseDebugLibraries>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <UseDebugLibraries>false</UseDebugLibraries>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <UseDebugLibraries>false</UseDebugLibraries>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -91,29 +87,31 @@
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary></RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAZEL_BUILD_DLL;HAZEL_DEBUG;CMAKE_INTDIR="Debug";Hazel_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;HAZEL_BUILD_DLL;HAZEL_DEBUG;CMAKE_INTDIR=\"Debug\";Hazel_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -124,11 +122,11 @@
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message>Auto build dll exports</Message>
       <Command>setlocal
-cd C:\ClionProjects\HazelLearn\build\Hazel
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\Hazel
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/Debug/exports.def C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/Debug//objects.txt
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/Debug/exports.def D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/Debug//objects.txt
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -144,7 +142,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/ClionProjects/HazelLearn/bin/Hazel.lib</ImportLibrary>
-      <ModuleDefinitionFile>C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/Debug/exports.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>C:/ClionProjects/HazelLearn/bin/Hazel.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -154,7 +152,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -163,21 +162,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary></RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAZEL_BUILD_DLL;HAZEL_RELEASE;CMAKE_INTDIR="Release";Hazel_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAZEL_BUILD_DLL;HAZEL_RELEASE;CMAKE_INTDIR=\"Release\";Hazel_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -188,11 +187,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message>Auto build dll exports</Message>
       <Command>setlocal
-cd C:\ClionProjects\HazelLearn\build\Hazel
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\Hazel
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/Release/exports.def C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/Release//objects.txt
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/Release/exports.def D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/Release//objects.txt
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -208,7 +207,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/ClionProjects/HazelLearn/bin/Hazel.lib</ImportLibrary>
-      <ModuleDefinitionFile>C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/Release/exports.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/Release/exports.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>C:/ClionProjects/HazelLearn/bin/Hazel.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -218,7 +217,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -227,21 +227,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary></RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAZEL_BUILD_DLL;CMAKE_INTDIR="MinSizeRel";Hazel_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAZEL_BUILD_DLL;CMAKE_INTDIR=\"MinSizeRel\";Hazel_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -252,11 +252,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message>Auto build dll exports</Message>
       <Command>setlocal
-cd C:\ClionProjects\HazelLearn\build\Hazel
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\Hazel
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel/exports.def C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel//objects.txt
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel/exports.def D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel//objects.txt
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -272,7 +272,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/ClionProjects/HazelLearn/bin/Hazel.lib</ImportLibrary>
-      <ModuleDefinitionFile>C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>C:/ClionProjects/HazelLearn/bin/Hazel.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -282,29 +282,31 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary></RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAZEL_BUILD_DLL;CMAKE_INTDIR="RelWithDebInfo";Hazel_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAZEL_BUILD_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";Hazel_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ClionProjects\HazelLearn\Hazel\src;C:\ClionProjects\HazelLearn\Hazel\vendor;C:\ClionProjects\HazelLearn\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -315,11 +317,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message>Auto build dll exports</Message>
       <Command>setlocal
-cd C:\ClionProjects\HazelLearn\build\Hazel
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\Hazel
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/RelWithDebInfo/exports.def C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/RelWithDebInfo//objects.txt
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/RelWithDebInfo/exports.def D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/RelWithDebInfo//objects.txt
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -335,7 +337,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/ClionProjects/HazelLearn/bin/Hazel.lib</ImportLibrary>
-      <ModuleDefinitionFile>C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>C:/ClionProjects/HazelLearn/bin/Hazel.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -348,7 +350,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/ClionProjects/HazelLearn/Hazel/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BC:/ClionProjects/HazelLearn/build --check-stamp-file C:/ClionProjects/HazelLearn/build/Hazel/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BD:/VsCodeCode/VscodeView/HazelLearn/build --check-stamp-file D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -356,12 +358,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\ClionProjects\HazelLearn\build\Hazel\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\VsCodeCode\VscodeView\HazelLearn\build\CMakeFiles\3.31.5\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\VsCodeCode\VscodeView\HazelLearn\build\Hazel\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/ClionProjects/HazelLearn/Hazel/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BC:/ClionProjects/HazelLearn/build --check-stamp-file C:/ClionProjects/HazelLearn/build/Hazel/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BD:/VsCodeCode/VscodeView/HazelLearn/build --check-stamp-file D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -369,12 +371,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\ClionProjects\HazelLearn\build\Hazel\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\VsCodeCode\VscodeView\HazelLearn\build\CMakeFiles\3.31.5\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\VsCodeCode\VscodeView\HazelLearn\build\Hazel\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/ClionProjects/HazelLearn/Hazel/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BC:/ClionProjects/HazelLearn/build --check-stamp-file C:/ClionProjects/HazelLearn/build/Hazel/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BD:/VsCodeCode/VscodeView/HazelLearn/build --check-stamp-file D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -382,12 +384,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\ClionProjects\HazelLearn\build\Hazel\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\VsCodeCode\VscodeView\HazelLearn\build\CMakeFiles\3.31.5\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\VsCodeCode\VscodeView\HazelLearn\build\Hazel\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/ClionProjects/HazelLearn/Hazel/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BC:/ClionProjects/HazelLearn/build --check-stamp-file C:/ClionProjects/HazelLearn/build/Hazel/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BD:/VsCodeCode/VscodeView/HazelLearn/build --check-stamp-file D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -395,22 +397,24 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\ClionProjects\HazelLearn\build\Hazel\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\VsCodeCode\VscodeView\HazelLearn\build\CMakeFiles\3.31.5\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\VsCodeCode\VscodeView\HazelLearn\build\Hazel\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel.h" />
-    <ClCompile Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel\Application.cpp" />
-    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel\Application.h" />
-    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel\EntryPoint.h" />
-    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\Hazel\core.h" />
+    <ClCompile Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\Application.cpp" />
+    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\Application.h" />
+    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\EntryPoint.h" />
+    <ClCompile Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\Log.cpp" />
+    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\Log.h" />
+    <ClInclude Include="C:\ClionProjects\HazelLearn\Hazel\src\hazel\core.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\ClionProjects\HazelLearn\build\ZERO_CHECK.vcxproj">
-      <Project>{F3A1582D-750E-3BE0-AC30-56686888F85D}</Project>
+    <ProjectReference Include="D:\VsCodeCode\VscodeView\HazelLearn\build\ZERO_CHECK.vcxproj">
+      <Project>{83B082D4-F73B-383D-A627-770018AFD403}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

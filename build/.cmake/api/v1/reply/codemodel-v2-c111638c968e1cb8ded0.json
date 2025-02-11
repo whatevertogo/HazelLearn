@@ -1,0 +1,792 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"build" : "_deps/spdlog-build",
+					"jsonFile" : "directory-_deps.spdlog-build-Debug-26a330787cb8f40d0a1a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-src",
+					"targetIndexes" : 
+					[
+						1,
+						7
+					]
+				},
+				{
+					"build" : "Hazel",
+					"jsonFile" : "directory-Hazel-Debug-458a867953a40626c0af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Hazel",
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"build" : "Sandbox",
+					"jsonFile" : "directory-Sandbox-Debug-5f4392a0e5eaed8a8ee6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Sandbox",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HazelLearn",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "spdlog",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Hazel",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Sandbox",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-4728f2afe04ba380be8e.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-ALL_BUILD-Debug-d3f94c4910a89c3844df.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@c312927d72e11e7b372f",
+					"jsonFile" : "target-ALL_BUILD-Debug-9e72e056ae1b92ca10fd.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ALL_BUILD::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-ALL_BUILD-Debug-f83f97ac0d9321fc3201.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Hazel::@c312927d72e11e7b372f",
+					"jsonFile" : "target-Hazel-Debug-3c5bf4f0eb0d0f89a7f3.json",
+					"name" : "Hazel",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Sandbox::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-Sandbox-Debug-b13afb67b5007668b22e.json",
+					"name" : "Sandbox",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-5d6a7931ba8f5bb82ec3.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "spdlog::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-spdlog-Debug-7702db65a9e6be7f1f29.json",
+					"name" : "spdlog",
+					"projectIndex" : 1
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"build" : "_deps/spdlog-build",
+					"jsonFile" : "directory-_deps.spdlog-build-Release-26a330787cb8f40d0a1a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-src",
+					"targetIndexes" : 
+					[
+						1,
+						7
+					]
+				},
+				{
+					"build" : "Hazel",
+					"jsonFile" : "directory-Hazel-Release-458a867953a40626c0af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Hazel",
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"build" : "Sandbox",
+					"jsonFile" : "directory-Sandbox-Release-5f4392a0e5eaed8a8ee6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Sandbox",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HazelLearn",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "spdlog",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Hazel",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Sandbox",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-4728f2afe04ba380be8e.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-ALL_BUILD-Release-d3f94c4910a89c3844df.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@c312927d72e11e7b372f",
+					"jsonFile" : "target-ALL_BUILD-Release-9e72e056ae1b92ca10fd.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ALL_BUILD::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-ALL_BUILD-Release-f83f97ac0d9321fc3201.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Hazel::@c312927d72e11e7b372f",
+					"jsonFile" : "target-Hazel-Release-4632beeabd7e0f8879cf.json",
+					"name" : "Hazel",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Sandbox::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-Sandbox-Release-3efc2f8471e8e30d8e10.json",
+					"name" : "Sandbox",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-5d6a7931ba8f5bb82ec3.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "spdlog::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-spdlog-Release-07834c52af9ebeb2eb80.json",
+					"name" : "spdlog",
+					"projectIndex" : 1
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"build" : "_deps/spdlog-build",
+					"jsonFile" : "directory-_deps.spdlog-build-MinSizeRel-26a330787cb8f40d0a1a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-src",
+					"targetIndexes" : 
+					[
+						1,
+						7
+					]
+				},
+				{
+					"build" : "Hazel",
+					"jsonFile" : "directory-Hazel-MinSizeRel-458a867953a40626c0af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Hazel",
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"build" : "Sandbox",
+					"jsonFile" : "directory-Sandbox-MinSizeRel-5f4392a0e5eaed8a8ee6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Sandbox",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HazelLearn",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "spdlog",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Hazel",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Sandbox",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-4728f2afe04ba380be8e.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-d3f94c4910a89c3844df.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@c312927d72e11e7b372f",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-9e72e056ae1b92ca10fd.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ALL_BUILD::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-f83f97ac0d9321fc3201.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Hazel::@c312927d72e11e7b372f",
+					"jsonFile" : "target-Hazel-MinSizeRel-84ace0cf6e7b665a9e31.json",
+					"name" : "Hazel",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Sandbox::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-Sandbox-MinSizeRel-b93d5e6c61f31280ebbb.json",
+					"name" : "Sandbox",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-5d6a7931ba8f5bb82ec3.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "spdlog::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-spdlog-MinSizeRel-5313685af3df0ecbe8fd.json",
+					"name" : "spdlog",
+					"projectIndex" : 1
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"build" : "_deps/spdlog-build",
+					"jsonFile" : "directory-_deps.spdlog-build-RelWithDebInfo-26a330787cb8f40d0a1a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-src",
+					"targetIndexes" : 
+					[
+						1,
+						7
+					]
+				},
+				{
+					"build" : "Hazel",
+					"jsonFile" : "directory-Hazel-RelWithDebInfo-458a867953a40626c0af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Hazel",
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"build" : "Sandbox",
+					"jsonFile" : "directory-Sandbox-RelWithDebInfo-5f4392a0e5eaed8a8ee6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Sandbox",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HazelLearn",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "spdlog",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Hazel",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Sandbox",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-4728f2afe04ba380be8e.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-d3f94c4910a89c3844df.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@c312927d72e11e7b372f",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-9e72e056ae1b92ca10fd.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ALL_BUILD::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-f83f97ac0d9321fc3201.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Hazel::@c312927d72e11e7b372f",
+					"jsonFile" : "target-Hazel-RelWithDebInfo-b9c3a555ed6ee30ab6e0.json",
+					"name" : "Hazel",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Sandbox::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-Sandbox-RelWithDebInfo-35da68a2894ac07a4a24.json",
+					"name" : "Sandbox",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-5d6a7931ba8f5bb82ec3.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "spdlog::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-spdlog-RelWithDebInfo-c294a754da3706ce4650.json",
+					"name" : "spdlog",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/VsCodeCode/VscodeView/HazelLearn/build",
+		"source" : "C:/ClionProjects/HazelLearn"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

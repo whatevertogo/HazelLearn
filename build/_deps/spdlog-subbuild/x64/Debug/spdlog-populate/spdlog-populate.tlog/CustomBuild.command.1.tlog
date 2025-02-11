@@ -1,0 +1,150 @@
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\58063245509674AACD95D05DC461B0CE\SPDLOG-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/tmp/spdlog-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\58063245509674AACD95D05DC461B0CE\SPDLOG-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/tmp/spdlog-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\58063245509674AACD95D05DC461B0CE\SPDLOG-POPULATE-UPDATE.RULE
+setlocal
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\_deps\spdlog-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/tmp/spdlog-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\58063245509674AACD95D05DC461B0CE\SPDLOG-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\58063245509674AACD95D05DC461B0CE\SPDLOG-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\_deps\spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\58063245509674AACD95D05DC461B0CE\SPDLOG-POPULATE-BUILD.RULE
+setlocal
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\_deps\spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\58063245509674AACD95D05DC461B0CE\SPDLOG-POPULATE-INSTALL.RULE
+setlocal
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\_deps\spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\58063245509674AACD95D05DC461B0CE\SPDLOG-POPULATE-TEST.RULE
+setlocal
+cd D:\VsCodeCode\VscodeView\HazelLearn\build\_deps\spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\DC9886093BF0FD4950A1FA37FC69134A\SPDLOG-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/Debug/spdlog-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\CF707655BF10E01B5AEF445D68FA389C\SPDLOG-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild -BD:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild --check-stamp-file D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

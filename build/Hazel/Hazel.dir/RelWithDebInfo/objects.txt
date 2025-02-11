@@ -1,1 +1,2 @@
-C:/ClionProjects/HazelLearn/build/Hazel/Hazel.dir/RelWithDebInfo/Application.obj
+D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/RelWithDebInfo/Application.obj
+D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/RelWithDebInfo/Log.obj

@@ -1,0 +1,36 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Sandbox/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Sandbox::@df4fa095c2a3dbacf8fe"
+		}
+	],
+	"id" : "ALL_BUILD::@df4fa095c2a3dbacf8fe",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "Sandbox",
+		"source" : "Sandbox"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
