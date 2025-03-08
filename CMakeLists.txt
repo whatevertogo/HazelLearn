@@ -19,10 +19,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)       # 强制要求使用指定的 C++ 标�
 set(CMAKE_CXX_EXTENSIONS OFF)             # 禁用编译器特定的扩展
 
 # Windows 平台特定设置
-if(WIN32)
+if (WIN32)
     set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)  # 导出所有符号
     add_compile_options(/utf-8)               # 启用 UTF-8 编码支持
-endif()
+    add_definitions(-DHZ_PLATFORM_WINDOWS)      # 定义 Windows 平台宏
+endif ()
 
 # 设置默认输出目录
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")  # 可执行文件输出目录
@@ -30,18 +31,18 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")  # 动态库输出
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")  # 静态库输出目录
 
 # 为不同的构建类型（Debug/Release等）设置输出目录
-foreach(OUTPUTCONFIG ${CMAKE_CONFIGURATION_TYPES})
+foreach (OUTPUTCONFIG ${CMAKE_CONFIGURATION_TYPES})
     string(TOUPPER ${OUTPUTCONFIG} OUTPUTCONFIG)
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_${OUTPUTCONFIG} "${CMAKE_SOURCE_DIR}/bin")
     set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_${OUTPUTCONFIG} "${CMAKE_SOURCE_DIR}/bin")
     set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_${OUTPUTCONFIG} "${CMAKE_SOURCE_DIR}/bin")
-endforeach()
+endforeach ()
 
 # 确保输出目录存在
 file(MAKE_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 
 # 处理外部依赖：如果启用了 spdlog
-if(HAZEL_USE_SPDLOG)
+if (HAZEL_USE_SPDLOG)
     include(FetchContent)                     # 包含 FetchContent 模块
     FetchContent_Declare(                     # 声明 spdlog 依赖
             spdlog
@@ -49,7 +50,8 @@ if(HAZEL_USE_SPDLOG)
             GIT_TAG v1.x
     )
     FetchContent_MakeAvailable(spdlog)        # 下载并构建 spdlog
-endif()
+endif ()
+
 
 # 添加子项目：引擎核心和示例程序
 add_subdirectory(Hazel)    # 添加 Hazel 引擎子项目
