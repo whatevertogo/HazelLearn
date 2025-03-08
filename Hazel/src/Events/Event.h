@@ -41,12 +41,12 @@ namespace Hazel
         friend class EventDispatcher;
     public:
         virtual ~Event() = default;
-        virtual EventType GetEventType() const = 0;
-        virtual const char* GetName() const = 0;
-        virtual int GetCategoryFlags() const = 0;
-        virtual std::string ToString() const { return GetName(); }
+        [[nodiscard]] virtual EventType GetEventType() const = 0;
+        [[nodiscard]] virtual const char* GetName() const = 0;
+        [[nodiscard]] virtual int GetCategoryFlags() const = 0;
+        [[nodiscard]] virtual std::string ToString() const { return GetName(); }
 
-        inline bool IsInCategory(EventCategory category)
+        [[nodiscard]] inline bool IsInCategory(EventCategory category) const
         {
             return GetCategoryFlags() & static_cast<int>(category);
         }
@@ -59,7 +59,7 @@ namespace Hazel
         template<typename T>
         using EventFn = std::function<bool(T&)>;
     public:
-        EventDispatcher(Event& event):
+        explicit EventDispatcher(Event& event):
         m_Event(event)
         {
         }

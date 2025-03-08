@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\VsCodeCode\VscodeView\HazelLearn\build\_deps\spdlog-subbuild\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>D:\AClionCode\HazelLearn\build\_deps\spdlog-subbuild\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,6 +1,6 @@
-^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\CF707655BF10E01B5AEF445D68FA389C\GENERATE.STAMP.RULE
+^D:\ACLIONCODE\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\0E4135B2AF31715904E2821E5F967BE8\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild -BD:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/AClionCode/HazelLearn/build/_deps/spdlog-subbuild -BD:/AClionCode/HazelLearn/build/_deps/spdlog-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/AClionCode/HazelLearn/build/_deps/spdlog-subbuild/spdlog-populate.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

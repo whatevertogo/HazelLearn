@@ -1,6 +1,6 @@
-^C:\CLIONPROJECTS\HAZELLEARN\CMAKELISTS.TXT
+^D:\ACLIONCODE\HAZELLEARN\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BD:/VsCodeCode/VscodeView/HazelLearn/build --check-stamp-file D:/VsCodeCode/VscodeView/HazelLearn/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/AClionCode/HazelLearn -BD:/AClionCode/HazelLearn/build --check-stamp-file D:/AClionCode/HazelLearn/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

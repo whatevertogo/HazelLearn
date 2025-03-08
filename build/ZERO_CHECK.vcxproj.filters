@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\VsCodeCode\VscodeView\HazelLearn\build\CMakeFiles\8b9d7b1d6cefdb97e64ae20bfb699a99\generate.stamp.rule">
+    <CustomBuild Include="D:\AClionCode\HazelLearn\build\CMakeFiles\546b925f8c940c0396373160b251b308\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{9C689567-9324-3F89-8785-58D0902BDA31}</UniqueIdentifier>
+      <UniqueIdentifier>{DC25B590-F91F-357B-8F25-BC064B92E979}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

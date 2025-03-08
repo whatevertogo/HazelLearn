@@ -8,6 +8,6 @@ C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake
-D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-src/CMakeLists.txt
-D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-src/cmake/ide.cmake
-D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-src/cmake/utils.cmake
+D:/AClionCode/HazelLearn/build/_deps/spdlog-src/CMakeLists.txt
+D:/AClionCode/HazelLearn/build/_deps/spdlog-src/cmake/ide.cmake
+D:/AClionCode/HazelLearn/build/_deps/spdlog-src/cmake/utils.cmake

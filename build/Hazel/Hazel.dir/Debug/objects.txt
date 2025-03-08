@@ -1,2 +1,2 @@
-D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/Debug/Application.obj
-D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/Debug/Log.obj
+D:/AClionCode/HazelLearn/build/Hazel/Hazel.dir/Debug/Application.obj
+D:/AClionCode/HazelLearn/build/Hazel/Hazel.dir/Debug/Log.obj

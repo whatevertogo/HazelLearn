@@ -1,2 +1,2 @@
-D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel/Application.obj
-D:/VsCodeCode/VscodeView/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel/Log.obj
+D:/AClionCode/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel/Application.obj
+D:/AClionCode/HazelLearn/build/Hazel/Hazel.dir/MinSizeRel/Log.obj

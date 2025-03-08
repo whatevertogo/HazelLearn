@@ -1,5 +1,4 @@
 # CMake generation dependency list for this directory.
-C:/ClionProjects/HazelLearn/Sandbox/CMakeLists.txt
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake
@@ -12,4 +11,5 @@ C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC-C.c
 C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC-C.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC.cmake
-D:/VsCodeCode/VscodeView/HazelLearn/build/CMakeFiles/3.31.5/CMakeCCompiler.cmake
+D:/AClionCode/HazelLearn/Sandbox/CMakeLists.txt
+D:/AClionCode/HazelLearn/build/CMakeFiles/3.31.5/CMakeCCompiler.cmake

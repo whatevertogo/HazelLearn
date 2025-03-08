@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\ClionProjects\HazelLearn\Sandbox\src\SandboxApp.cpp">
+    <ClCompile Include="D:\AClionCode\HazelLearn\Sandbox\src\SandboxApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\ClionProjects\HazelLearn\Sandbox\CMakeLists.txt" />
+    <CustomBuild Include="D:\AClionCode\HazelLearn\Sandbox\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{28064395-C48B-32B3-B611-3037520A9907}</UniqueIdentifier>
+      <UniqueIdentifier>{B242D5C8-759A-3896-984B-A2843082C672}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

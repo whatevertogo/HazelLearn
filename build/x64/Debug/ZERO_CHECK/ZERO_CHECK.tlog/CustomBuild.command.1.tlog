@@ -1,6 +1,6 @@
-^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\CMAKEFILES\8B9D7B1D6CEFDB97E64AE20BFB699A99\GENERATE.STAMP.RULE
+^D:\ACLIONCODE\HAZELLEARN\BUILD\CMAKEFILES\546B925F8C940C0396373160B251B308\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/ClionProjects/HazelLearn -BD:/VsCodeCode/VscodeView/HazelLearn/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/VsCodeCode/VscodeView/HazelLearn/build/HazelLearn.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/AClionCode/HazelLearn -BD:/AClionCode/HazelLearn/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/AClionCode/HazelLearn/build/HazelLearn.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

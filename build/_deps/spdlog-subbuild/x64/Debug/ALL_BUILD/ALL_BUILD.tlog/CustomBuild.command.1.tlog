@@ -1,6 +1,6 @@
-^D:\VSCODECODE\VSCODEVIEW\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKELISTS.TXT
+^D:\ACLIONCODE\HAZELLEARN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild -BD:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild --check-stamp-file D:/VsCodeCode/VscodeView/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/AClionCode/HazelLearn/build/_deps/spdlog-subbuild -BD:/AClionCode/HazelLearn/build/_deps/spdlog-subbuild --check-stamp-file D:/AClionCode/HazelLearn/build/_deps/spdlog-subbuild/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
