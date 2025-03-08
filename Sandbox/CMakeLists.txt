@@ -9,7 +9,7 @@ file(GLOB_RECURSE SANDBOX_SOURCES
 # 创建可执行文件
 add_executable(Sandbox ${SANDBOX_SOURCES})
 
-# Add necessary definitions
+#添加必要的定义
 target_compile_definitions(Sandbox PRIVATE
         HZ_PLATFORM_WINDOWS
 )

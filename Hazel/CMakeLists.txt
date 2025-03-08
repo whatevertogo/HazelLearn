@@ -1,19 +1,25 @@
 project(Hazel)
 
 # 添加 UTF-8 编码支持
-if(MSVC)
+if (MSVC)
     add_compile_options(/utf-8 /wd4819)
     add_compile_definitions(_UNICODE UNICODE)
-endif()
+endif ()
 
 # 定义 Hazel 的源文件
 file(GLOB_RECURSE HAZEL_SOURCES
         "src/*.cpp"
         "src/*.h"
+        "src/Events/*.h"
 )
+file(GLOB_RECURSE HAZEL_EVENT_SOURCES "src/Events/*.h")
+
 
 # 创建共享库 （DLL）
-add_library(Hazel SHARED ${HAZEL_SOURCES})
+add_library(Hazel SHARED
+        ${HAZEL_SOURCES}
+        ${HAZEL_EVENT_SOURCES}
+)
 
 
 # 在构建 DLL 时定义 HAZEL_BUILD_DLL
@@ -31,9 +37,9 @@ target_include_directories(Hazel PUBLIC
 )
 
 # 如果启用，则与 spdlog 链接
-if(HAZEL_USE_SPDLOG)
+if (HAZEL_USE_SPDLOG)
     target_link_libraries(Hazel PRIVATE spdlog::spdlog)
-endif()
+endif ()
 
 # 确保 DLL 进入 bin 目录
 set_target_properties(Hazel PROPERTIES
